@@ -1,0 +1,19 @@
+img {
+    padding: 20px;
+    width: 100px;
+    border-radius: 50px;
+}
+h1 {
+    color: blue;
+    right: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+h2 {
+    color: crimson;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div.card{ border: 20px;
+    border-radius: 50px;
+    color: blue;
+}

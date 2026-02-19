@@ -1,0 +1,28 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+div.card{
+    border: 5px solid orange;
+    border-radius: 10px;
+    padding: 20px;
+    height: 200px;
+    width: 300px;
+    box-shadow:0 0 1px rgba(red 0, green 0, blue 0,  0.1) ;
+    text-align: center;
+    justify-content: center;
+    margin: 200px auto;
+    background-color: blueviolet;
+
+
+}
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    border-radius: 8px;
+    color: azure;
+    cursor:pointer ;
+    margin: 20px auto 0;
+    font-display: block;
+    display: flexbox;
+}

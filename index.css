@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 245, 245);
+    
+}
+header{
+    
+    background-color: rgb(47, 243, 13);
+    padding: 30px;
+    width:100rem;
+    height: 5rem;
+    font-size: large;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+h1{ 
+    color: rgb(51, 0, 255);
+    position: relative;
+    left: 50px;
+    margin-top: auto;
+}
+img{
+    padding: 20px;
+    border-top: 20px;
+    height: 500px;
+    width: 400px;
+    align-content: flex-end;
+
+}
