@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+      <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="Dashboard"></div>
+    <aside class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul class="nav-links">
+            <li class="active">Dashboard</li>
+            <li>Users</li>
+            <li>Sales</li>
+            <li>Messages</li>
+            <li>Revenue</li>
+        </ul>
+    </aside>
+    <header class="topnav">
+       <div class="nav-left">
+       <button id="menu-toggle" class="hamburger"></button>
+       <h3>Dashboard</h3>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search users..." />
+
+    <div class="profile">
+        <img src="https://i.pravatar.cc/40" alt="profile">
+        <div class="dropdown">
+            <div>My Profile</div>
+            <div>Settings</div>
+            <div>Logout</div>
+        </div>
+    </div>
+    </header>
+    <main class="main">
+        <div class="cards">
+            <div class="card">
+                <h3>Users</h3>
+                <p>1200</p>
+            </div>
+            <div class="card">
+                <h3>Sales</h3>
+                <p>300</p>
+            </div>
+            <div class="card">
+                <h3>Messages</h3>
+                <p>80</p>
+            </div>
+            <div class="card">
+                <h3>Revenue</h3>
+                <p>120,000</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="addUserBtn" class="btn btn-primary">Add User</button>
+            <button id="exportBtn" class="btn btn-success">Export</button>
+            <button id="settingsBtn" class="btn btn-settings">Settings</button>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Godlove Ngala</td>
+                        <td>godlovengala97@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td><button class="btn btn-outline delete-btn">Delete</button></td>
+
+                    </tr>
+                    <tr>
+                        <td>Immaculate Ngani</td>
+                        <td>immaculatengani23@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td><button class="btn btn-outline delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ngala Caleb</td>
+                        <td>goddybrown05@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td><button class="btn btn-outline delete-btn">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Nfor Mark</td>
+                        <td>mark@gmail.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td><button class="btn btn-outline delete-btn">Delete</button></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </main>
+
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Add New User</h3>
+            <form id="userform">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="role" placeholder="Role" required>
+
+                <select id="status">
+                    <option value="Active">Active</option>
+                    <option value="Pending">Pending</option>
+                </select>
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="button" id="closeModal" class="btn btn-outline">cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+       <footer class="footer">
+            <P>&copy; 2026 Admin Dashboard</P>
+        </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
